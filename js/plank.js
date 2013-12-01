@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-        $( "#begindate" ).datepicker();
-        var currentDate = $( "#begindate" ).datepicker("getDate");
-        var myday = currentDate.getDate();
-        var mymonth=currentDate.getMonth();
-        var myyear = currentDate.getFullYear();
+        $( "#userDate" ).datepicker();
+        var chosenDate = $( "#userDate" ).datepicker("getDate");
+        var chosenDay = chosenDate.getDate();
+        var chosenMonth=chosenDate.getMonth();
+        var chosenYear = chosenDate.getFullYear();
         
 $('#calendar').fullCalendar({
         header: {
@@ -13,222 +13,168 @@ $('#calendar').fullCalendar({
                 right: 'month,basicWeek,basicDay'
         },
         editable: true,
-        eventSources: [
-        {
-                events: [
+        events:
+        [
                 {
                         title: '20 second plank',
-                        start: new Date(currentDate),
+                        start: new Date(chosenDate),
                         allDay: true
                 },
                 {
                         title: '20 second plank',
-                        start: new Date(myyear, mymonth, myday + 1),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 1),
                         allDay: true
                 },
                 {
                         title: '30 second plank',
-                        start: new Date(myyear, mymonth, myday + 2),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 2),
                         allDay: true
                 },
                 {
                         title: '30 second plank',
-                        start: new Date(myyear, mymonth, myday + 3),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 3),
                         allDay: true
                 },
                 {
                         title: '40 second plank',
-                        start: new Date(myyear, mymonth, myday + 4),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 4),
                         allDay: true
                 },
                 {
                         title: 'Rest Day',
-                        start: new Date(myyear, mymonth, myday + 5),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 5),
                         allDay: true
                 },
                 {
                         title: '45 second plank',
-                        start: new Date(myyear, mymonth, myday + 6),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 6),
                         allDay: true
                 },
                 {
                         title: '45 second plank',
-                        start: new Date(myyear, mymonth, myday + 7),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 7),
                         allDay: true
                 },
                 {
                         title: '60 second plank',
-                        start: new Date(myyear, mymonth, myday + 8),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 8),
                         allDay: true
                 },
                 {
                         title: '60 second plank',
-                        start: new Date(myyear, mymonth, myday + 9),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 9),
                         allDay: true
                 },
                 {
                         title: '60 second plank',
-                        start: new Date(myyear, mymonth, myday + 10),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 10),
                         allDay: true
                 },
                 {
                         title: '90 second plank',
-                        start: new Date(myyear, mymonth, myday + 11),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 11),
                         allDay: true
                 },
                 {
                         title: 'Rest Day',
-                        start: new Date(myyear, mymonth, myday + 12),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 12),
                         allDay: true
                 },
                 {
                         title: '90 second plank',
-                        start: new Date(myyear, mymonth, myday + 13),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 13),
                         allDay: true
                 },
                 {
                         title: '90 second plank',
-                        start: new Date(myyear, mymonth, myday + 14),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 14),
                         allDay: true
                 },
                 {
                         title: '120 second plank',
-                        start: new Date(myyear, mymonth, myday + 15),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 15),
                         allDay: true
                 },
                 {
                         title: '120 second plank',
-                        start: new Date(myyear, mymonth, myday + 16),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 16),
                         allDay: true
                 },
                 {
                         title: '150 second plank',
-                        start: new Date(myyear, mymonth, myday + 17),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 17),
                         allDay: true
                 },
                 {
                         title: 'Rest Day',
-                        start: new Date(myyear, mymonth, myday + 18),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 18),
                         allDay: true
                 },
                 {
                         title: '150 second plank',
-                        start: new Date(myyear, mymonth, myday + 19),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 19),
                         allDay: true
                 },
                 {
                         title: '150 second plank',
-                        start: new Date(myyear, mymonth, myday + 20),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 20),
                         allDay: true
                 },
                 {
                         title: '180 second plank',
-                        start: new Date(myyear, mymonth, myday + 21),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 21),
                         allDay: true
                 },
                 {
                         title: '180 second plank',
-                        start: new Date(myyear, mymonth, myday + 22),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 22),
                         allDay: true
                 },
                 {
                         title: '210 second plank',
-                        start: new Date(myyear, mymonth, myday + 23),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 23),
                         allDay: true
                 },
                 {
                         title: '210 second plank',
-                        start: new Date(myyear, mymonth, myday + 24),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 24),
                         allDay: true
                 },
                 {
                         title: 'Rest Day',
-                        start: new Date(myyear, mymonth, myday + 25),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 25),
                         allDay: true
                 },
                 {
                         title: '240 second plank',
-                        start: new Date(myyear, mymonth, myday + 26),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 26),
                         allDay: true
                 },
                 {
                         title: '240 second plank',
-                        start: new Date(myyear, mymonth, myday + 27),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 27),
                         allDay: true
                 },
                 {
                         title: '270 second plank',
-                        start: new Date(myyear, mymonth, myday + 28),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 28),
                         allDay: true
                 },
                 {
                         title: '300 second plank',
-                        start: new Date(myyear, mymonth, myday + 29),
+                        start: new Date(chosenYear, chosenMonth, chosenDay + 29),
                         allDay: true
                 },
-                ]
-        }
         ]
-/*        },
-        {
-                events: [
-                {
-                        title: 'Integer rutrum ante eu lacus',
-                        start: new Date(y, m, 4, 16, 00),
-                        allDay: false
-                },
-                {
-                        title: 'Aliquam erat volpat. Duis ac turpis',
-                        start: new Date(y, m, 9, 16, 00),
-                        allDay: false
-                },
-                {
-                        title: 'Donec in velit vel ipsum',
-                        start: new Date(y, m, 10, 16, 00),
-                        allDay: false
-                },
-                {
-                        title: 'Praent vestibulum',
-                        start: new Date(y, m, 13, 9, 00),
-                        allDay: false
-                }
-            ]
-}
-*/
-
-
-        });
-
-  
-        
-//        $('.refresh-btn').click(function() {
-//                location.reload();
-//       });
-
-//        $('#refresh-btn').click(function() {
-//                $('#calendar').fullCalendar( "rerenderEvents" );
-//        });
-
-
-
+});  
 
 });
 
-	$('#PageRefresh').click(function() {
+$('#pageRefresh').click(function() { 
+    	location.reload();
  
-    	      location.reload();
- 
-	});
-        
-//        $('#refresh-btn').click(function() {
-//                 $('#calendar').fullCalendar('rerenderEvents');
- //        });
+});
 
-
- 
-//        $('.refresh-btn').click(function()
-//                {
-//                document.location.reload(true);
-//                });
-
-        
+$("#pagePrint").printPage({
+  message:"Your document is being printed"
+})
