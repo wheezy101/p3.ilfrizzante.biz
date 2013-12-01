@@ -1,0 +1,94 @@
+.colors {
+        width:40px;
+        height:40px;
+        float:left;
+        margin-right:3px;
+        cursor:pointer;
+}
+
+/*
+#picker {
+        width:40px;
+        height:40px;
+        float:left;
+        margin-right:3px;
+        cursor:pointer;
+}
+*/
+
+#orange {
+        background-color:orange;
+}
+
+.textures {
+        float:left;
+        width:80px;
+        height:40px;
+        margin-right:3px;
+        cursor:pointer;
+}
+
+#swirls {
+        background-image:url('/images/texture-swirls.png');
+}
+
+#paper {
+        background-image:url('/images/texture-paper.png');
+}
+
+
+#message-output {
+        position:absolute;
+        top:50px;
+        border:1px solid red;
+        text-align:center;
+        font-size:30px;
+        width:100%;
+}
+
+#recipient-output {
+        position:absolute;
+        top:100px;
+        border:1px solid red;
+        text-align:center;
+        font-size:30px;
+        width:100%;
+}
+
+#recipient-error {
+
+}
+
+.stickers_on_card {
+        position:absolute;
+        top:0px;
+        left:0px;
+}
+
+/* located in demo.css and creates a little calendar icon
+ * instead of a text link for "Choose date"
+ */
+a.dp-choose-date {
+	float: left;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 5px 3px 0;
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(calendar.png) no-repeat; 
+}
+a.dp-choose-date.dp-disabled {
+	background-position: 0 -20px;
+	cursor: default;
+}
+/* makes the input field shorter once the date picker code
+ * has run (to allow space for the calendar icon
+ */
+input.dp-applied {
+	width: 140px;
+	float: left;
+}
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>30-Day Challenges</title>
+	
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/features.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+	<link rel="stylesheet" href="css/datePicker.css" type="text/css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css">
+	      
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+	<link rel='stylesheet' type='text/css' href='js/fullcalendar/fullcalendar.css' />
+	<script type='text/javascript' src='js/fullcalendar/jquery.js'></script>
+	<script type='text/javascript' src='js/fullcalendar/fullcalendar.js'></script>
+	
+	
+
+<!-- required plugins -->
+<script type="text/javascript" src="js/date.js"></script>
+
+<!-- jquery.datePicker.js -->
+<script type="text/javascript" src="js/jquery.datePicker.js"></script>
+
+</head>
+
+
+<body>
+
+<div id='wrapper'>
+
+	<h1>30-Day Challenge</h1>
+
+	<!-- Left side with all the controls -->
+	<div id='picker'>
+	
+		<!-- Challenge picker -->
+			<h2>Pick a challenge!</h2>
+			<br></br>		
+			<input type="checkbox" id="planks" value="Plank Challenge">Plank Challenge<br></br>
+			<input type="button" id="situps" value="Sit-up Challenge">Sit-up Challenge<br></br>
+			<input type="button" id="squats" value="Squat Challenge">Squat Challenge<br></br>
+			<input type="button" id="pushups" value="Push-up Challenge">Push-up Challenge<br></br>
+		<!-- Date picker -->
+		<div id='pickadate'>
+		<h2>Pick a start date!</h2>
+		<p>Date: <input type="text" id="begindate"></p>
+			<br></br>
+		<input type='button' value='Refresh' id='PageRefresh'>
+		
+	
+	</div>
+
+
+	</div>
+	
+	<!-- Right side with the calendar -->
+	<div id='calendar'>
+		<!-- Date picker -->
+			<br></br>		
+	
+	</div>
+	
+</div>
+
+<script src="js/plank.js"></script>
+	
+</body>
+
+</html>
