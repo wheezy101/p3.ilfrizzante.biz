@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
         $( "#userDate" ).datepicker();
@@ -8,9 +9,8 @@ $(document).ready(function() {
         
 $('#calendar').fullCalendar({
         header: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'month,basicWeek,basicDay'
+                left: 'prev,next',
+                center: 'title'
         },
         editable: true,
         events:
@@ -168,6 +168,8 @@ $('#calendar').fullCalendar({
         ]
 });  
 
+
+
 });
 
 $('#pageRefresh').click(function() { 
@@ -175,6 +177,9 @@ $('#pageRefresh').click(function() {
  
 });
 
-$("#pagePrint").printPage({
-  message:"Your document is being printed"
-})
+$('#pagePrint').click(function() { 
+    	window.print();
+ 
+});
+
+

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
+	
 <html>
 <head>
+<meta charset="utf-8">
 
-	<title>30-Day Challenges</title>
+	<title>30-Day Plank Challenge Scheduler</title>
 	
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="stylesheet" href="css/features.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
 	<link rel="stylesheet" href="css/datePicker.css" type="text/css">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css">
+	<link rel="stylesheet" href="css/base-min.css">	
 	      
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -16,7 +20,7 @@
 	<link rel='stylesheet' type='text/css' href='js/fullcalendar/fullcalendar.css' />
 	<script type='text/javascript' src='js/fullcalendar/jquery.js'></script>
 	<script type='text/javascript' src='js/fullcalendar/fullcalendar.js'></script>
-	
+	<script type='text/javascript' src='js/jqueryprintpage-master/js/jquery.printpage.js'></script>
 	
 
 <!-- required plugins -->
@@ -24,6 +28,7 @@
 
 <!-- jquery.datePicker.js -->
 <script type="text/javascript" src="js/jquery.datePicker.js"></script>
+<!--[if IE]><script type="text/javascript" src="scripts/jquery.bgiframe.js"></script><![endif]-->
 
 </head>
 
@@ -32,31 +37,34 @@
 
 <div id='wrapper'>
 
-	<h1>30-Day Challenge</h1>
+	<h1>30-Day Plank Challenge</h1>
 
 	<!-- Left side with all the controls -->
 	<div id='picker'>
 	
 		<!-- Date picker -->
-		<div id='pickDate'>
+		<div id='pickDate'>		
 		<h2>Pick a start date!</h2>
 		<p>Date: <input type="text" id="userDate"></p>
-			<br></br>
-		<input type='button' value='Refresh' id='pageRefresh'>
-			<br></br>
-		<input type='button' value='Print' id='pagePrint'>
+		<br></br>
+		</div>
 		
-	
-	</div>
-
-
+		<!-- Refresh page -->
+		<br></br>
+		<input type='button' value='Update Calendar' id='pageRefresh'>
+		<br></br>
+		
+		<!-- Print page -->
+		<input type='button' value='Print' id='pagePrint'>
 	</div>
 	
 	<!-- Right side with the calendar -->
-	<div id='calendar'>
-		<!-- Date picker -->
-			<br></br>		
+	<h3>Planks are a great exercise for strengthing your core.</h3>
+	<h3>Learn how to do a plank <a href="http://www.wikihow.com/Perform-the-Plank-Exercise">here</a>.</h3> 
+	<h3>Then, schedule your 30-day plank challenge.</h3>
+	<br></br>
 	
+	<div id='calendar'>
 	</div>
 	
 </div>
