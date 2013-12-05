@@ -1,9 +1,12 @@
 $(document).ready(function() {
 
+        /*get the date the user picks*/
         $( "#userDate" ).datepicker();
         var chosenDate = $( "#userDate" ).datepicker("getDate");
         var currentDate = new Date;
-        if (currentDate>chosenDate)
+        /*alert the user if they choose a date in the past*/
+        /*allow them to choose a date in the past...maybe they did the challenge before and want a record of it*/
+        if (currentDate>chosenDate & chosenDate!=null)
         {
                 window.alert("That date is before or on today's date!");
         }
@@ -17,6 +20,7 @@ $('#calendar').fullCalendar({
                 center: 'title'
         },
         editable: true,
+        /*here is the plank challenge schedule*/
         events:
         [
                 {
@@ -174,11 +178,13 @@ $('#calendar').fullCalendar({
 
 });
 
+/*refresh button for if/when the user changes the start date*/
 $('#pageRefresh').click(function() { 
     	location.reload();
  
 });
 
+/*print button*/
 $('#pagePrint').click(function() { 
     	window.print();
  
