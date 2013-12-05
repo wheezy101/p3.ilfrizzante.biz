@@ -1,15 +1,14 @@
-
 $(document).ready(function() {
 
         $( "#userDate" ).datepicker();
         var chosenDate = $( "#userDate" ).datepicker("getDate");
         var currentDate = new Date;
-        if (chosenDate<currentDate)
+        if (currentDate>chosenDate)
         {
-                window.alert("You've chosen a date that's before today's date!");
+                window.alert("That date is before or on today's date!");
         }
         var chosenDay = chosenDate.getDate();
-        var chosenMonth=chosenDate.getMonth();
+        var chosenMonth = chosenDate.getMonth();
         var chosenYear = chosenDate.getFullYear();
         
 $('#calendar').fullCalendar({
@@ -172,8 +171,6 @@ $('#calendar').fullCalendar({
                 },
         ]
 });  
-
-
 
 });
 
