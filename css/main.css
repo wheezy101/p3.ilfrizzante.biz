@@ -14,14 +14,14 @@ h1 {
 }
 
 h2 {
-	font-size:15px;
+	font-size:20px;
 	margin-top:30px;
 	margin-bottom:5px;
 }
 
 h3 {
 	text-align:left;
-	font-size: small;
+	font-size: 16px;
 }
 
 a {
@@ -34,7 +34,7 @@ Buttons and inputs
 -------------------------------------------------------------------------------------------------*/
 
 input[type=text] {
-	font-size: 12px;
+	font-size: 16px;
 }
 
 input[type=button] {
@@ -45,7 +45,7 @@ input[type=button] {
   position: relative;
   cursor: pointer;
   font-weight: bold;
-  font-size:10px;
+  font-size:16px;
   background-color: pink;
 	-webkit-border-radius: 7px;
 	border-radius: 7px;

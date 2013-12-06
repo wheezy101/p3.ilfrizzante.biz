@@ -172,7 +172,7 @@ $('#calendar').fullCalendar({
                         title: '300 second plank',
                         start: new Date(chosenYear, chosenMonth, chosenDay + 29),
                         allDay: true
-                },
+                }
         ]
 });  
 
