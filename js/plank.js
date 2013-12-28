@@ -1,9 +1,30 @@
-
-$(document).ready(function() {
+//$(document).ready(function() {
 /*page load with the datepicker function*/
-        /*get the date the user picks*/
-        $( "#userDate" ).datepicker();
-        var chosenDate = $( "#userDate" ).datepicker("getDate");
+/*        /*get the date the user picks*/
+/*        $('#userDate').datepicker();
+        var chosenDate = $('#userDate').datepicker('getDate');
+        var currentDate = new Date;
+        /*alert the user if they choose a date in the past*/
+        /*allow them to choose a date in the past...maybe they did the challenge before and want a record of it*/
+/*        if (currentDate>chosenDate & chosenDate!=null)
+        {
+                window.alert("That date is before or on today's date!");
+        }
+        var chosenDay = chosenDate.getDate();
+        var chosenMonth = chosenDate.getMonth();
+        var chosenYear = chosenDate.getFullYear();
+*/
+
+  $(function() {
+    $( "#userDate" ).datepicker();
+  });
+  
+/*Delete the old calendar with the old start date*/
+$('#calendar').fullCalendar('destroy');	
+/*button loads the full calendar when the user changes the start date*/
+$('#plankCalendar').click(function() {
+        $('#userDate').datepicker();
+        var chosenDate = $('#userDate').datepicker('getDate');
         var currentDate = new Date;
         /*alert the user if they choose a date in the past*/
         /*allow them to choose a date in the past...maybe they did the challenge before and want a record of it*/
@@ -14,12 +35,8 @@ $(document).ready(function() {
         var chosenDay = chosenDate.getDate();
         var chosenMonth = chosenDate.getMonth();
         var chosenYear = chosenDate.getFullYear();
-
-/*button loads the full calendar when the user changes the start date*/
-$('#plankCalendar').click(function() {
-/*Delete the old calendar with the old start date*/
-$('#calendar').fullCalendar('destroy');	
 /*load the new one*/
+$('#calendar').fullCalendar('destroy');	
 $('#calendar').fullCalendar({
         header: {
                 left: 'prev,next',
@@ -181,7 +198,7 @@ $('#calendar').fullCalendar({
                 }
         ]
 	})
-})
+//})
 });
 
 
