@@ -1,5 +1,6 @@
-$(document).ready(function() {
 
+$(document).ready(function() {
+/*page load with the datepicker function*/
         /*get the date the user picks*/
         $( "#userDate" ).datepicker();
         var chosenDate = $( "#userDate" ).datepicker("getDate");
@@ -13,7 +14,12 @@ $(document).ready(function() {
         var chosenDay = chosenDate.getDate();
         var chosenMonth = chosenDate.getMonth();
         var chosenYear = chosenDate.getFullYear();
-        
+
+/*button loads the full calendar when the user changes the start date*/
+$('#plankCalendar').click(function() {
+/*Delete the old calendar with the old start date*/
+$('#calendar').fullCalendar('destroy');	
+/*load the new one*/
 $('#calendar').fullCalendar({
         header: {
                 left: 'prev,next',
@@ -174,15 +180,10 @@ $('#calendar').fullCalendar({
                         allDay: true
                 }
         ]
-});  
-
+	})
+})
 });
 
-/*refresh button for if/when the user changes the start date*/
-$('#pageRefresh').click(function() { 
-    	location.reload();
- 
-});
 
 /*print button*/
 $('#pagePrint').click(function() { 
