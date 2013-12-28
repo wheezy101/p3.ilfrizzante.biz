@@ -1,21 +1,5 @@
-//$(document).ready(function() {
-/*page load with the datepicker function*/
-/*        /*get the date the user picks*/
-/*        $('#userDate').datepicker();
-        var chosenDate = $('#userDate').datepicker('getDate');
-        var currentDate = new Date;
-        /*alert the user if they choose a date in the past*/
-        /*allow them to choose a date in the past...maybe they did the challenge before and want a record of it*/
-/*        if (currentDate>chosenDate & chosenDate!=null)
-        {
-                window.alert("That date is before or on today's date!");
-        }
-        var chosenDay = chosenDate.getDate();
-        var chosenMonth = chosenDate.getMonth();
-        var chosenYear = chosenDate.getFullYear();
-*/
-
-  $(function() {
+/*Initialize the datepicker*/
+$(function() {
     $( "#userDate" ).datepicker();
   });
   
@@ -35,9 +19,9 @@ $('#plankCalendar').click(function() {
         var chosenDay = chosenDate.getDate();
         var chosenMonth = chosenDate.getMonth();
         var chosenYear = chosenDate.getFullYear();
-/*load the new one*/
-$('#calendar').fullCalendar('destroy');	
-$('#calendar').fullCalendar({
+	/*load the new calendar*/
+	$('#calendar').fullCalendar('destroy');	
+	$('#calendar').fullCalendar({
         header: {
                 left: 'prev,next',
                 center: 'title'
@@ -198,7 +182,6 @@ $('#calendar').fullCalendar({
                 }
         ]
 	})
-//})
 });
 
 
